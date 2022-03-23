@@ -21,7 +21,7 @@ if($q && $q->execute()) {
                 $appointmentId = $appointment['ID'];
                 $appointmentData = $appointment['data'];
                 $appointmentTimestamp = strtotime($appointmentData);
-                echo "<button>";
+                echo "<a style=\"margin:10px; display:block>";
                 echo date("j.m H:i", $appointmentTimestamp);
                 echo "</button>";
             }
